@@ -7,7 +7,7 @@
     "mixins": [
     ],
     "client": [
-        "MixinTitleScreen"
+      "tfar.superflatdimensions.mixin.MixinTitleScreen"
     ],
     "server": [
     ],
