@@ -1,5 +1,12 @@
 package tfar.superflatdimension;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.dimension.DimensionType;
 import tfar.superflatdimension.platform.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Items;
@@ -15,6 +22,14 @@ public class SuperflatDimension {
     public static final String MOD_ID = "superflatdimension";
     public static final String MOD_NAME = "Superflat Dimension";
     public static final Logger LOG = LoggerFactory.getLogger(MOD_NAME);
+
+  //  public static final ResourceKey<DimensionType> DEATH_DIM_TYPE = ResourceKey.create(Registries.DIMENSION_TYPE,id("death"));
+    public static final ResourceKey<Level> SUPERFLAT_DIM = ResourceKey.create(Registries.DIMENSION,id("superflat"));
+
+
+    public static ResourceLocation id(String path) {
+        return new ResourceLocation(MOD_ID,path);
+    }
 
     // The loader specific projects are able to import and use any code from the common project. This allows you to
     // write the majority of your code here and load it from your loader specific projects. This example has some

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "superflatdimension:block/superflat_portal_ns"
+    },
+    "axis=z": {
+      "model": "superflatdimension:block/superflat_portal_ew"
+    }
+  }
+}
