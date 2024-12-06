@@ -3,6 +3,7 @@ package tfar.superflatdimension.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import tfar.superflatdimension.Init;
 import tfar.superflatdimension.SuperflatDimension;
 
 public class ModBlockstateProvider extends BlockStateProvider {
@@ -12,5 +13,6 @@ public class ModBlockstateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        simpleBlock(Init.SUPERFLAT_PORTAL);
     }
 }

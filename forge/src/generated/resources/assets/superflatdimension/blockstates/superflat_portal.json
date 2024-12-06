@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "superflatdimension:block/superflat_portal"
+    }
+  }
+}

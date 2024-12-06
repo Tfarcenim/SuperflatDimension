@@ -17,7 +17,13 @@ public class SuperflatDimensionForge {
         // This method is invoked by the Forge mod loader when it is ready
         // to load your mod. You can access Forge and Common code in this
         // project.
-    
+
+       // if (FMLEnvironment.dist.isClient()) {
+       //     bus.addListener((FMLClientSetupEvent event) -> {
+       //         ItemBlockRenderTypes.setRenderLayer(Init.SUPERFLAT_PORTAL,RenderType.translucent());
+      //      });
+      ///  }
+
         // Use Forge to bootstrap the Common mod.
         SuperflatDimension.init();
         
@@ -25,6 +31,6 @@ public class SuperflatDimensionForge {
 
     void register(RegisterEvent event) {
         event.register(Registries.BLOCK,SuperflatDimension.id("superflat_portal"),() -> Init.SUPERFLAT_PORTAL);
+        event.register(Registries.ITEM,SuperflatDimension.id("superflat_portal"),() -> Init.SUPERFLAT_PORTAL_ITEM);
     }
-
 }

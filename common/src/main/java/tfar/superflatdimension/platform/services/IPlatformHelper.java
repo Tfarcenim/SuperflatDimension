@@ -1,5 +1,11 @@
 package tfar.superflatdimension.platform.services;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+
 public interface IPlatformHelper {
 
     /**
@@ -33,4 +39,7 @@ public interface IPlatformHelper {
 
         return isDevelopmentEnvironment() ? "development" : "production";
     }
+
+    void handleSuperflatDimensionChange(BlockState state, Level level, ServerLevel to, BlockPos pos, Entity entity);
+
 }

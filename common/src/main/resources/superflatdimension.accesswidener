@@ -9,6 +9,10 @@ accessible field net/minecraft/world/level/portal/PortalShape width I
 accessible field net/minecraft/world/level/portal/PortalShape bottomLeft Lnet/minecraft/core/BlockPos;
 accessible field net/minecraft/world/level/portal/PortalShape numPortalBlocks I
 
+accessible field net/minecraft/world/level/portal/PortalForcer level Lnet/minecraft/server/level/ServerLevel;
+
 extendable method net/minecraft/world/level/portal/PortalShape getDistanceUntilEdgeAboveFrame (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)I
 extendable method net/minecraft/world/level/portal/PortalShape getDistanceUntilTop (Lnet/minecraft/core/BlockPos$MutableBlockPos;)I
 extendable method net/minecraft/world/level/portal/PortalShape hasTopFrame (Lnet/minecraft/core/BlockPos$MutableBlockPos;I)Z
+
+accessible field net/minecraft/world/entity/ai/village/poi/PoiTypes TYPE_BY_STATE Ljava/util/Map;

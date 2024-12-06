@@ -1,7 +1,0 @@
-{
-  "parent" : "minecraft:block/nether_portal_ns",
-  "textures" : {
-    "particle": "superflatdimension:block/superflat_portal",
-    "portal": "superflatdimension:block/superflat_portal"
-  }
-}

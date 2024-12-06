@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "s": {
+      "item": "minecraft:slime_block"
+    }
+  },
+  "pattern": [
+    "sss",
+    "sfs",
+    "sss"
+  ],
+  "result": {
+    "item": "superflatdimension:superflat_portal"
+  },
+  "show_notification": true
+}
